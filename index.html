@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="hero-div">
+        <div class="nav_container d-flex justify-content-center align-item-center">
+            <p class="mb-0">Futuready - A Full Service Creative Digital Agency</p>
+        </div>
+        <main>
+            <div class="video-background">
+                <video autoplay muted loop>
+                    <source src="video/showreel_for_web_banner_horizontal.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <!-- Overlay Tint -->
+            <div class="overlay"></div>
+
+            <!-- Aside Sidebar / Navbar -->
+            <aside>
+                <div class="logo">
+                    <img src="img/main-logo.png" alt="Logo">
+                </div>
+                <button class="hamburger" id="menuBtn">☰</button>
+                <div class="aside-contact">
+                    <p>Contact Us</p>
+                </div>
+            </aside>
+
+            <!-- Full Screen Menu -->
+            <div id="menuOverlay" class="menu-overlay">
+                <span class="close-btn" id="closeBtn">✕</span>
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Work</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <!-- Page Content -->
+            <div class="hero-content">
+                <h1>Futuready. Set. Go.</h1>
+                <p>Take Me Ahead.</p>
+            </div>
+        </main>
+    </div>
+    <!-- sec div -->
+    <section class="sec-div">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 col-sm-12 ps-5">
+                <h3 class="text-uppercase sec-head">We are <br> Futuready</h3>
+                <a href="mailto:hello@futureadymedia.com" class="text-color sec-mail pb-2">
+                    hello@futureadymedia.com
+                </a>
+            </div>
+            <div class="col-md-12 col-lg-6 col-sm-12 a-para-head ps-4">
+                <p class="a-para ms-3">A full service creative digital agency focused on <a class="a-tag"
+                        href="#">Strategy</a>, <a class="a-tag" href="#">Branding</a>,
+                    <a class="a-tag" href="">Content</a>, <a class="a-tag" href="#">Design</a>, <a class="a-tag"
+                        href="#">Marketing</a> and <a class="a-tag" href="#">Technology</a>.
+                </p>
+
+                <b>13</b>
+                <h4 class="sec-p">YEARS OF<br> CREATIVE DIGITAL<br> EXPERIENCE</h4>
+            </div>
+        </div>
+    </section>
+    <!-- thired div -->
+    <section>
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-12">
+                    <div class="office-slider">
+                        <figure>
+                            <img id="videoThumbnail" src="img/office-new.webp" alt="Image" width="1316" height="480"
+                                loading="lazy">
+                            <figcaption>
+                                <h6>WE GET IT DONE!</h6>
+                                <a class="youtube-btn" data-bs-toggle="modal" data-bs-target="#videoModal"
+                                    data-src="https://www.youtube.com/embed/dyd8MexkVPs?autoplay=1"></a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fourth div -->
+    <section class="fourth-div">
+        <div class="row ">
+            <div class="col-12">
+                <h3 class="text-center fourth-title">
+                    OUR CREATIVE DIGITAL <br>
+                    MARKETING EXPERTISE
+                </h3>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_strategy.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>STRATEGY</h5>
+                    <p class="border-bottom pb-5">Research<br>
+                        Analysis<br>
+                        Positioning<br>
+                        Purpose<br>
+                        Market Strategy
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_branding.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>BRANDING</h5>
+                    <p class="border-bottom pb-5">Identity<br>
+                        Voice<br>
+                        Positioning<br>
+                        Audience &amp; Competitor Analysis<br>
+                        Consumer Journeys<br>
+                        Brand Guidelines
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_strategy.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>CONTENT</h5>
+                    <p class="border-bottom pb-5">Video<br>
+                        Photography<br>
+                        Animations<br>
+                        Copywriting<br>
+                        Social Content
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_strategy.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>DESIGN</h5>
+                    <p class="border-bottom pb-5">App Design<br>
+                        Website Design<br>
+                        Traditional Design<br>
+                        Experience Design
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_strategy.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>MARKETING</h5>
+                    <p class="border-bottom pb-5">CRM<br>
+                        Banner Ads &amp; Retargeting<br>
+                        Email Campaigns<br>
+                        Social Campaigns<br>
+                        Influencer Marketing
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center mt-4 mb-mt-4 px-4">
+                <div class="fourth-card text-center selected">
+                    <figure> <img src="img/icons_strategy.webp" alt="Image" width="75" height="75">
+                    </figure>
+                    <h5>TECHNOLOGY</h5>
+                    <p class="border-bottom pb-5">Content Management Systems<br>
+                        Website Development<br>
+                        App Development<br>
+                        E-Commerce
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- fifth dev -->
+    <section class="fifth-div">
+        <div class="row">
+            <div class="col-lg-5">
+                <h3 class="ms-3 fourth-title">
+                    WE WORK WITH <br>
+                    REMARKABLE BRANDS
+                </h3>
+            </div>
+            <div class="col-lg-7">
+                <div id="carousel" class="carousel">
+                    <div class="slide">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/loreal_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/schindler_logo.webp" width="100%" height="auto" alt="schindler">
+                                    </td>
+                                    <td><img src="img/sharekhan_logo.webp" width="100%" height="auto" alt="sharekhan">
+                                    </td>
+                                    <td><img src="img/sunpharma_logo.webp" width="100%" height="auto" alt="sun"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/tata_aig_logo.webp" width="100%" height="auto" alt="Tata"></td>
+                                    <td><img src="img/tata_logo.webp" width="100%" height="auto" alt="Sunpharma"></td>
+                                    <td><img src="img/tata_sons_logo.webp" width="100%" height="auto" alt="HCL"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="slide">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/sharekhan_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/sunpharma_logo.webp" width="100%" height="auto" alt="schindler">
+                                    </td>
+                                    <td><img src="img/loreal_logo.webp  " width="100%" height="auto" alt="sharekhan">
+                                    </td>
+                                    <td><img src="img/schindler_logo.webp " width="100%" height="auto" alt="sun"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/loreal_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="slide">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/loreal_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/schindler_logo.webp" width="100%" height="auto" alt="schindler">
+                                    </td>
+                                    <td><img src="img/sharekhan_logo.webp" width="100%" height="auto" alt="sharekhan">
+                                    </td>
+                                    <td><img src="img/sunpharma_logo.webp" width="100%" height="auto" alt="sun"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/loreal_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="slide">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/loreal_logo.webp" width="100%" height="auto" alt="lorel"></td>
+                                    <td><img src="img/mahindra_logo.webp" width="100%" height="auto" alt="mahindra">
+                                    </td>
+                                    <td><img src="img/razorpay_logo.webp" width="100%" height="auto" alt="razerpay">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/schindler_logo.webp" width="100%" height="auto" alt="schindler">
+                                    </td>
+                                    <td><img src="img/sharekhan_logo.webp" width="100%" height="auto" alt="sharekhan">
+                                    </td>
+                                    <td><img src="img/sunpharma_logo.webp" width="100%" height="auto" alt="sun"></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/tata_aig_logo.webp" width="100%" height="auto" alt="Tata"></td>
+                                    <td><img src="img/tata_logo.webp" width="100%" height="auto" alt="Sunpharma"></td>
+                                    <td><img src="img/tata_sons_logo.webp" width="100%" height="auto" alt="HCL"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="prev-next">
+                    <button id="prev"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-left fw-bold" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
+                        </svg></button>
+                    <button id="next"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-chevron-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                        </svg></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sixth div -->
+    <section class="sixth-div">
+        <div class="row">
+            <div class="col-lg-5 ps-4">
+                <h3 class="text-uppercase sec-head sixth-head">LET'S WORK <br> TOGETHER</h3>
+                <p>We create campaigns that connect, collaborating with clients all over the world. Call us or send us
+                    an email to get started.</p>
+            </div>
+            <div class="col-lg-7">
+                <form class="p-4 rounded" style="background-color:#0d203a; color:#fff;">
+                    <div class="mb-3">
+                        <label for="services" class="form-label">Need Your Services<span
+                                class="text-danger">*</span></label>
+                        <select class="form-select" id="services" required>
+                            <option selected disabled>Please Select</option>
+                            <option>Web Development</option>
+                            <option>SEO</option>
+                            <option>Marketing</option>
+                        </select>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="name" class="form-label">Name<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="email" class="form-label">Email<span class="text-danger">*</span></label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="phone" class="form-label">Phone Number<span class="text-danger">*</span></label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="company" class="form-label">Company name<span
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="company" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="location" class="form-label">Location<span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="location" required>
+                        </div>
+                        <div class="col-md-6 col-12 mb-3">
+                            <label for="budget" class="form-label">Average Annual Marketing Budget <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select" id="budget" required>
+                                <option selected disabled>Please Select</option>
+                                <option>Less than $10,000</option>
+                                <option>$10,000 - $50,000</option>
+                                <option>Above $50,000</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-light px-5 w-md-auto">Submit</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-12 mr-bt-mb">
+                <div>
+                    <img class="footer-logo" src="img/footer-logo-new.png">
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 mr-bt-mb">
+                <div class="footer-link-hero">
+                    <h6>
+                        Main
+                    </h6>
+                    <div class="footer-links">
+                        <a class="active" href="https://www.futureadymedia.com/"> Home</a>
+                        <a class="" href="about-us"> About</a>
+                        <a class="" href="work"> Work</a>
+                        <a class="" href="ideas"> Ideas</a>
+                        <a class="" href="careers"> Careers@Futuready</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-3 col-6 mr-bt-mb">
+                <div>
+                    <h6>
+                        Services
+                    </h6>
+                    <div class="footer-links">
+                        <a class="active" href="digital-strategy"> Digital Strategy</a>
+                        <a class="" href="branding"> Branding</a>
+                        <a class="" href="content"> Content</a>
+                        <a class="" href="design"> Design</a>
+                        <a class="" href="digital-marketing"> Digital Marketing</a>
+                        <a class="" href="development"> Development</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-3 col-md-5 mr-bt-mb">
+                <div class="info-contact">
+                    <h6>
+                        Contact
+                    </h6>
+                    <div class="contact_link_box d-flex flex-column gap-2">
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-white">
+                            <i class="bi bi-telephone-fill me-2"></i>
+                            <span>+91 99873 48608</span>
+                        </a>
+
+                        <a href="#" class="d-flex align-items-center text-decoration-none text-white">
+                            <i class="bi bi-envelope-fill me-2"></i>
+                            <span>hello@futureadymedia.com</span>
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-12">
+                <div class="footer-bar d-flex justify-content-between align-items-center">
+                    <div class="left-foot">
+                        <a href="#" target="_blank">Orange Videos</a> |
+                        <a href="#" target="_blank">SEO Partners</a>
+                    </div>
+
+                    <div class="text-end right-foot">
+                        © Futuready 2025
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- <div class="col-12">
+                    <div class="footer-bar"> <span class="copyright"><a target="_blank"
+                                href="https://www.orangevideos.in/"></a>
+                            <p><a target="_blank" href="https://www.orangevideos.in/">Orange Videos</a> | <a
+                                    target="_blank" href="https://www.seopartners.in/">SEO partners</a></p>
+                        </span> <span class="ms-auto">
+                            <p> © Futuready 2025</p>
+                        </span></div>
+                </div> -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="ratio ratio-16x9">
+                        <iframe id="videoFrame" src="" title="YouTube video" frameborder="0"
+                            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+         <script src="index.js" defer></script>
+        
+    <script>
+       
+    </script>
+</body>
+
+</html>
