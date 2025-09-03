@@ -457,10 +457,12 @@ td {
   margin-right: 10px;
 }
 
+
 /*MOBILE view*/
 @media (max-width: 768px) {
   /* Turn aside into top navbar */
   aside {
+        position: fixed;
     width: 100%;
     height: 60px;
     flex-direction: row;
@@ -468,6 +470,11 @@ td {
     padding: 0 20px;
     background: #0d213a !important;
   }
+   .nav_container {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
 
   aside .logo img {
     width: 40px;
@@ -550,3 +557,4 @@ td {
     margin-left: 15px;
   }
 }
+
